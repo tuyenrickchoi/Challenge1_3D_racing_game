@@ -1,12 +1,9 @@
 # 🏎️ 3D Racing Game – Three.js + Cannon.js
 
-Một trò chơi đua xe 3D đơn giản nhưng đầy đủ tính năng, được xây dựng hoàn toàn bằng **Three.js** (đồ họa) và **cannon-es** (vật lý).  
-Dự án tập trung vào việc **refactor sạch sẽ** từ một file HTML/JS duy nhất thành kiến trúc **ES Modules** hiện đại, dễ bảo trì và mở rộng.
+Một trò chơi đua xe 3D đơn giản nhưng đầy đủ tính năng, được xây dựng hoàn toàn bằng Three.js (đồ họa) và cannon (vật lý).  
+Dự án tập trung vào việc refactor từ một file HTML/JS duy nhất thành kiến trúc ES Modules hiện đại, dễ bảo trì và mở rộng.
 
-![preview](https://i.imgur.com/3z9kP8L.png)  
-*(Hình ảnh minh hoạ – game chạy mượt trên trình duyệt)*
-
-## 🚀 Tính năng chính
+Tính năng chính
 
 - Đua xe 3D với mô phỏng vật lý thực tế (Cannon.RaycastVehicle)
 - Đường đua khép kín hình chữ nhật có tường trong/ngoài
@@ -16,7 +13,7 @@ Dự án tập trung vào việc **refactor sạch sẽ** từ một file HTML/J
 - Âm thanh động cơ + tiếng va chạm
 - Hoàn toàn modular (ESM) – mỗi chức năng nằm trong file riêng
 
-## 🏗️ Cấu trúc thư mục
+🏗️ Cấu trúc thư mục
 3d-racing-game/
 ├── index.html              # Trang chính (canvas + HUD)
 ├── style.css               # Style HUD
@@ -32,7 +29,7 @@ Dự án tập trung vào việc **refactor sạch sẽ** từ một file HTML/J
 ├── UI.js               # HUD & thông báo
 └── Constants.js        # Hằng số game
 
-## 🛠️ Công nghệ sử dụng
+🛠️ Công nghệ sử dụng
 
 | Công nghệ          | Phiên bản   | Vai trò                          |
 |--------------------|-------------|----------------------------------|
@@ -41,7 +38,7 @@ Dự án tập trung vào việc **refactor sạch sẽ** từ một file HTML/J
 | ES Modules         | Native      | Kiến trúc modular sạch           |
 | HTML5 Audio API    | —           | Âm thanh động cơ & va chạm       |
 
-## ✅ Yêu cầu đã hoàn thành (100%)
+ Yêu cầu đã hoàn thành (100%)
 
 - [x] Scene + Cannon World + Gravity
 - [x] Mặt đất cỏ + đường đua texture
@@ -55,7 +52,7 @@ Dự án tập trung vào việc **refactor sạch sẽ** từ một file HTML/J
 - [x] Âm thanh động cơ + tiếng crash
 - [x] Refactor hoàn toàn thành ES Modules
 
-## 🎮 Điều khiển
+ 🎮 Điều khiển
 
 | Phím            | Chức năng                  |
 |-----------------|----------------------------|
@@ -64,30 +61,20 @@ Dự án tập trung vào việc **refactor sạch sẽ** từ một file HTML/J
 | `A` hoặc `←`    | Rẽ trái                    |
 | `D` hoặc `→`    | Rẽ phải                    |
 
-**Lưu ý âm thanh**: Nhấn chuột trái 1 lần vào màn hình để unlock audio, sau đó nhấn `W` để nghe tiếng động cơ.
+Lưu ý âm thanh: Nhấn chuột trái 1 lần vào màn hình để unlock audio, sau đó nhấn `W` để nghe tiếng động cơ.
 
-## 🚀 Hướng dẫn chạy dự án
+🚀 Hướng dẫn chạy dự án
 
-Dự án dùng ES Modules + tải tài nguyên → **bắt buộc chạy qua local server**.
+Dự án dùng ES Modules + tải tài nguyên → bắt buộc chạy qua local server.
 
-### Cách nhanh nhất (khuyên dùng)
+Cách nhanh nhất (khuyên dùng)
 
 1. Cài extension **Live Server** trong VS Code
 2. Mở thư mục dự án
-3. Chuột phải `index.html` → **Open with Live Server**
+3. Chuột phải `index.html` → *Open with Live Server*
 
 → Game sẽ chạy tại: `http://127.0.0.1:5500`
 
-### Các cách khác
-
-```bash
-# Python 3
-python -m http.server 8000
-
-# Node.js
-npx serve
-# hoặc
-npx live-server
 
 📁 Chuẩn bị Assets (bắt buộc)
 Tạo các file placeholder
@@ -98,4 +85,3 @@ Tạo các file placeholder
 Nếu thiếu file sẽ bị lỗi 404, game vẫn chạy nhưng không có texture/âm thanh.
 🎉 Hoàn thành!
 Bạn đã có một trò chơi đua xe 3D hoàn chỉnh, sạch sẽ, dễ mở rộng (thêm xe AI, nhiều map, drift meter, v.v.).
-Chúc bạn chơi vui và học tốt WebGL + Physics! 🏁
