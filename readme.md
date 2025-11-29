@@ -1,4 +1,4 @@
-# 🏎️ 3D Racing Game – Three.js + Cannon.js
+🏎️ 3D Racing Game – Three.js + Cannon.js
 
 Một trò chơi đua xe 3D đơn giản nhưng đầy đủ tính năng, được xây dựng hoàn toàn bằng Three.js (đồ họa) và cannon (vật lý).  
 Dự án tập trung vào việc refactor từ một file HTML/JS duy nhất thành kiến trúc ES Modules hiện đại, dễ bảo trì và mở rộng.
